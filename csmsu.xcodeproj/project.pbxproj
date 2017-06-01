@@ -16,6 +16,7 @@
 		041EDD781ED2B8FB008F2EEA /* csmsuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EDD771ED2B8FB008F2EEA /* csmsuTests.swift */; };
 		041EDD831ED2B8FB008F2EEA /* csmsuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EDD821ED2B8FB008F2EEA /* csmsuUITests.swift */; };
 		041EDD951ED2D253008F2EEA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041EDD941ED2D253008F2EEA /* Alamofire.framework */; };
+		049262B51EE0190E008001CA /* GroupsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049262B41EE0190E008001CA /* GroupsClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		041EDD821ED2B8FB008F2EEA /* csmsuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = csmsuUITests.swift; sourceTree = "<group>"; };
 		041EDD841ED2B8FB008F2EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041EDD941ED2D253008F2EEA /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/csmsu-gqzcypaxxinwsvhbhnlcxhkwlpwa/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		049262B41EE0190E008001CA /* GroupsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupsClass.swift; path = ../GroupsClass.swift; sourceTree = "<group>"; };
 		1CA0D67D22D25FF89EF29511 /* Pods-csmsu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-csmsu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-csmsu/Pods-csmsu.debug.xcconfig"; sourceTree = "<group>"; };
 		52A0BF0B959411BF0BA7AA24 /* Pods-csmsu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-csmsu.release.xcconfig"; path = "Pods/Target Support Files/Pods-csmsu/Pods-csmsu.release.xcconfig"; sourceTree = "<group>"; };
 		C5EF14D78ECFF48177507F69 /* Pods_csmsu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_csmsu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				041EDD601ED2B8FA008F2EEA /* AppDelegate.swift */,
+				049262B41EE0190E008001CA /* GroupsClass.swift */,
 				041EDD621ED2B8FA008F2EEA /* FirstViewController.swift */,
 				041EDD661ED2B8FA008F2EEA /* Main.storyboard */,
 				041EDD691ED2B8FB008F2EEA /* Assets.xcassets */,
@@ -335,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049262B51EE0190E008001CA /* GroupsClass.swift in Sources */,
 				041EDD611ED2B8FA008F2EEA /* AppDelegate.swift in Sources */,
 				041EDD631ED2B8FA008F2EEA /* FirstViewController.swift in Sources */,
 			);

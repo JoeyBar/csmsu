@@ -29,28 +29,38 @@ class FirstViewController: UIViewController {
 //        let urlSting = "http://csmsucenter.com/cs_msu_club/chklogin.php"
         
         
+//        Alamofire.request(.GET, url).validate().responseJSON { response in
+//            switch response.result {
+//            case .Success(let data):
+//                let json = (data)
+//                let name = json["name"]!!.stringValue
+//                print(name)
+//            case .Failure(let error):
+//                print("Request failed with error: \(error)")
+//            }
+//        }
         
-        
-        Alamofire.request(.POST, url)
-            .responseJSON { response in
-                // print response as string for debugging, testing, etc.
-                debugPrint(response)
-                
-                                var JSON = [AnyObject]()
-                                JSON = response.result.value as! [AnyObject]!
-                
-                                //let chklogin:[String] = ["success"]
-                
-                                for value in JSON {
-                                    self.nameUser = (value["user"] as? String)!
-                                    self.passUser = (value["pass"] as? String)!
-                                }
-                                print("Name : \(self.nameUser)")
-                                print("Pass : \(self.passUser)")
-        
-                print("DATA : \(response.result.value)")
-                print(response.result.error)
-        }
+//        
+//        Alamofire.request(.POST, url)
+//            .responseJSON { response in
+//                // print response as string for debugging, testing, etc.
+//                debugPrint(response)
+//                
+//                                var JSON = [AnyObject]()
+//                                JSON = response.result.value as! [AnyObject]!
+//                
+//                                //let chklogin:[String] = ["success"]
+//                
+//                                for value in JSON {
+//                                    self.nameUser = (value["user"] as? String)!
+//                                    self.passUser = (value["pass"] as? String)!
+//                                }
+//                                print("Name : \(self.nameUser)")
+//                                print("Pass : \(self.passUser)")
+//        
+//                print("DATA : \(response.result.value)")
+//                print(response.result.error)
+//        }
    }
     
 
