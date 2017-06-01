@@ -16,7 +16,7 @@ class FirstViewController: UIViewController {
     var passUser = ""
     
     
-    let url = "http://csmsucenter.com/cs_msu_club/PHP_iOS/home.php"
+    let url = "http://localhost/csmsuclub/chklogin.php"
     
     //var data = getdate(name: [], pass: [])
     
@@ -31,26 +31,26 @@ class FirstViewController: UIViewController {
         
         
         
-//        Alamofire.request(.POST, urlString)
-//            .responseJSON { response in
-//                // print response as string for debugging, testing, etc.
-//                debugPrint(response)
-//                
-//                                var JSON = [AnyObject]()
-//                                JSON = response.result.value as! [AnyObject]!
-//                
-//                                //let chklogin:[String] = ["success"]
-//                
-//                                for value in JSON {
-//                                    self.nameUser = (value["IDuser"] as? String)!
-//                                    self.passUser = (value["Passuser"] as? String)!
-//                                }
-//                                print("Name : \(self.nameUser)")
-//                                print("Pass : \(self.passUser)")
+        Alamofire.request(.POST, url)
+            .responseJSON { response in
+                // print response as string for debugging, testing, etc.
+                debugPrint(response)
+                
+                                var JSON = [AnyObject]()
+                                JSON = response.result.value as! [AnyObject]!
+                
+                                //let chklogin:[String] = ["success"]
+                
+                                for value in JSON {
+                                    self.nameUser = (value["user"] as? String)!
+                                    self.passUser = (value["pass"] as? String)!
+                                }
+                                print("Name : \(self.nameUser)")
+                                print("Pass : \(self.passUser)")
         
-//                print("DATA : \(response.result.value)")
-//                print(response.result.error)
-//        }
+                print("DATA : \(response.result.value)")
+                print(response.result.error)
+        }
    }
     
 
