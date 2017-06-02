@@ -83,6 +83,11 @@ class FirstViewController: UIViewController {
    
     
     
+    func uploadJson() {
+        
+        
+    }
+    
     @IBAction func loginButton(sender: UIButton) {
         
         let username = nameTextfield.text
